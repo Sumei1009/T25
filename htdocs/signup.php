@@ -29,9 +29,9 @@
     $row    = pg_fetch_assoc($result);		// To store the result row
     if (isset($_POST['submit'])) {
         if (!$result) {
-            echo "Update failed!!";
+            echo "Sign up failed!!";
         } else {
-            echo "Update successful!";
+            echo "Sign up successful!";
         }
     }
     // if (isset($_POST['new'])) {	// Submit the update SQL command
