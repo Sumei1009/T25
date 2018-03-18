@@ -29,11 +29,11 @@
     $row    = pg_fetch_assoc($result);		// To store the result row
     if (isset($_POST['submit'])) {
         if (!$result) {
-            echo "Signup failed!!";
+            echo "Sign up failed!!";
         } else {
-            echo "Signup successful!";
-            header("Location: /cs2102/signin.php");
-            exit;
+            echo "Sign up successful!";
+            // header("Location: /cs2102/signin.php");
+            // exit;
         }
     }
     ?>  
