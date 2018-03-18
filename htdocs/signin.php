@@ -7,11 +7,7 @@
 <body>
   <h2>Sign up</h2>
   <ul>
-    <form name="display" action="signup.php" method="POST" >
-      <li>First Name:</li>
-      <li><input type="text" name="fname" /></li>
-      <li>Last Name:</li>
-      <li><input type="text" name="lname" /></li>
+    <form name="display" action="signin.php" method="POST" >
       <li>Phone Number: </li>
       <li><input type="text" name="phone" /></li>
       <li>Gender:</li>
@@ -29,9 +25,9 @@
     $row    = pg_fetch_assoc($result);		// To store the result row
     if (isset($_POST['submit'])) {
         if (!$result) {
-            echo "Signup failed!!";
+            echo "Update failed!!";
         } else {
-            echo "Signup successful!";
+            echo "Update successful!";
             header("Location: /cs2102/signin.php");
             exit;
         }
