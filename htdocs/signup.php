@@ -24,7 +24,7 @@
   </ul>
   <?php
   	// Connect to the database. Please change the password in the following line accordingly
-    $db     = pg_connect("host=localhost port=5432 dbname=Team25 user=postgres password=postgres");	
+    $db     = pg_connect("host=localhost port=5432 dbname=Team25 user=postgres password=root");	
     $result = pg_query($db, "INSERT INTO appuser VALUES('$_POST[phone]', '$_POST[fname]', '$_POST[lname]', '$_POST[gender]', null)");		// Query template
     $row    = pg_fetch_assoc($result);		// To store the result row
     if (isset($_POST['submit'])) {
